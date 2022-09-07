@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo máy tính</title>
+</head>
+<style>
+    div {
+        width: 500px;
+        height: 500px;
+    }
+
+    table {
+        padding: 5px;
+        border: 3px solid black;
+    }
+
+    button {
+        color: blue;
+        width: 30px;
+        background-color: white;
+        border-radius: 0;
+        border: 2px solid lightgrey;
+        border-bottom-color: grey;
+        cursor: pointer;
+    }
+
+    td {
+        padding-left: 5px;
+    }
+
+    th {
+        margin-bottom: 2px;
+    }
+
+    input {
+        border-radius: 0;
+        border: 1px solid lightgrey;
+        height: 20px;
+    }
+</style>
+<body>
+<div>
+    <form action="#">
+        <table>
+            <tr>
+                <th colspan="4"><input type="text" name="inputNum" id="inputNum"></th>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="calculate('1')">1</button></td>
+                <td><button type="button" onclick="calculate('2')">2</button></td>
+                <td><button type="button" onclick="calculate('3')">3</button></td>
+                <td><button type="button" onclick="calculate('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="calculate('4')">4</button></td>
+                <td><button type="button" onclick="calculate('5')">5</button></td>
+                <td><button type="button" onclick="calculate('6')">6</button></td>
+                <td><button type="button" onclick="calculate('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="calculate('7')">7</button></td>
+                <td><button type="button" onclick="calculate('8')">8</button></td>
+                <td><button type="button" onclick="calculate('9')">9</button></td>
+                <td><button type="button" onclick="calculate('x')">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="reset">C</button></td>
+                <td><button type="button" onclick="calculate('0')">0</button></td>
+                <td><button type="button" onclick="calc()">=</button></td>
+                <td><button type="button" onclick="calculate('/')">/</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
